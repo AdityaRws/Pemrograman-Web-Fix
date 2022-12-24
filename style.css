@@ -1,0 +1,226 @@
+#calculator {
+  display: flex;
+  flex-direction: column;
+  width: 880px;
+  height: 900px;
+  margin: 0 auto;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: scroll;
+}
+
+#tabs {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #ddd;
+  overflow: auto;
+}
+
+.tab {
+  flex: 1;
+  text-align: center;
+  background-color: inherit;
+  color: black;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab.active, .tab:hover {
+  background-color: #ccc;
+}
+
+.tab-content {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+label {
+  margin: 8px 0;
+}
+
+input[type="number"] {
+  width: 60px;
+}
+
+button[type="button"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+button[type="button"]:hover {
+  background-color: #45a049;
+}
+
+#discount-result, #currency-result, #speed-result, #volume-result, #BMI-result, #temperature-result {
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+* {
+  box-sizing: border-box;
+}
+.decoration-one {
+  background-color:#45a049;
+  margin: 0;
+  border:0;
+  border-radius: 12px;
+  padding: 9px;
+  font-weight: bold;
+}
+.decoration-one:hover {
+  background-color:#2d6b30;
+
+}
+a {
+  text-decoration: none;
+  color:black;
+}
+
+/* Currency */
+
+
+.main {
+  width: 50vw;
+  margin: auto;
+  padding: 30px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+label {
+  font-size: 20px;
+}
+
+.btn {
+  width: 200px;
+}
+
+#finalAmount {
+  font-family: 'Lobster', cursive;
+  display: none;
+  margin: 50px auto;
+}
+
+#finalAmount h2 {
+  font-size: 50px;
+}
+
+.finalValue {
+  font-family: 'Amiri', serif;
+}
+
+  
+#finalAmount h2, .finalValue {
+      font-size: 40px;
+  }
+
+/*Tmp*/
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(3, 2, 4, 0.7), rgba(3, 2, 4, 0.7)), url(img/background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    flex-direction: column;
+}
+
+.container h1 {
+    color: white;
+    font-size: 45px;
+}
+
+.container h1 i {
+    font-size: 60px;
+    margin-left: 10px;
+}
+
+.converter-row {
+    display: flex;
+    margin-top: 5%;
+    width: 70%;
+    justify-content: space-between;
+    align-items: center;
+    background: #e4e71b;
+    border-radius: 10px;
+    padding: 50px 20px;
+    transition: 1s;
+}
+
+.converter-row:hover {
+    box-shadow: 0px 0px 10px 1px #e4e71b, 0px 0px 10px 1px #e09016;
+}
+.converter-row .equal {
+    margin: 25px 7px 0;
+}
+
+.col {
+    flex-basis: 35%;
+    text-align: center;
+}
+
+.col label {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.col label i {
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+.col input {
+    outline: none;
+    border: 1px solid rgb(160, 157, 157);
+    width: 150px;
+    height: 30px;
+    background: white;
+    border-radius: 5px;
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+}
+
+.col input:hover {
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3), -1px -1px 5px 1px rgba(0, 0, 0, 0.3);
+    background: #fff;
+    border: transparent;
+}
